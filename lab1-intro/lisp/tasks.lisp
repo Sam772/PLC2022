@@ -2,7 +2,7 @@
 (print (1 + 2 - 3))
 ;; the above expression throws an error
 ;; Answer:
-print(- (+ 1 2) 3)
+(print(- (+ 1 2) 3))
 
 ;; code for Task 1.2(b)
 (defvar x 55)
