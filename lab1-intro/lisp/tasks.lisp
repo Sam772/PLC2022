@@ -14,9 +14,9 @@
 ; TODO: convert the cond macro in a nested if-then-else
 ; Answer:
 (defvar x 55)
-(if (< x 10))
+(if (< x 10)
     (format t "number below 10")
-(if (< x 50))
+(if (< x 50)
     (format t "number below 50")
 (format t "number greater or equal 50")))
 
