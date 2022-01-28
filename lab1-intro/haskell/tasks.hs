@@ -73,3 +73,9 @@ main =
   do
   ask "!"
   -- find a way to add += "!" onto it each time
+
+-- civ.)
+-- Answer:
+--error:
+-- * No instance for (Num String) arising from a use of `+'
+-- * In the first argument of `ask', namely `(1 + prompt)'
