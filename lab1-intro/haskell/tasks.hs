@@ -79,3 +79,9 @@ main =
 --error:
 -- * No instance for (Num String) arising from a use of `+'
 -- * In the first argument of `ask', namely `(1 + prompt)'
+
+-- cv.)
+-- Answer:
+-- It would ask the prompt twice
+-- It would add 1 to prompt
+-- It would lead to a compiler error
