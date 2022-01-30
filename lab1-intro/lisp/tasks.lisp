@@ -1,5 +1,6 @@
 ;; code for Task 1.2(a):
-(print (1 + 2 - 3))
+;; Starting code
+;; (print (1 + 2 - 3))
 ;; the above expression throws an error
 ;; Answer:
 (print(- (+ 1 2) 3))
@@ -21,8 +22,8 @@
 (format t "number greater or equal 50")))
 
 ;; code for Task 1.2(c):
-(setf prg '(+ 1 n)) ; define a very simple program
-(print prg) ; print the program
+; (setf prg '(+ 1 n)) define a very simple program
+; (print prg) print the program
 ; TODO: executethe program with n = 1 and print its result
 ; Answer:
 ; this sets variable n to 1
