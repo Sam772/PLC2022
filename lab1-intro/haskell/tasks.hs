@@ -79,9 +79,10 @@ main =
 --error:
 -- * No instance for (Num String) arising from a use of `+'
 -- * In the first argument of `ask', namely `(1 + prompt)'
+-- This happens because you cant use + 
+-- between an integer and a string
 
 -- cv.)
 -- Answer:
--- It would ask the prompt twice
--- It would add 1 to prompt
--- It would lead to a compiler error
+-- It would lead to a compiler error because 
+-- you are adding an integer and a string
