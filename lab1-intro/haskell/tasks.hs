@@ -65,14 +65,13 @@ ask prompt =
   putStrLn prompt
   line <- getLine
   if line == ""
-    then ask prompt
-    else putStrLn ("quitting...")
+    then ask (prompt ++ "!")
+    else putStrLn ("you said: " ++ reverse line)
 
 main :: IO ()
 main =
   do
   ask "!"
-  -- find a way to add += "!" onto it each time
 
 -- civ.)
 -- Answer:
