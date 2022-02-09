@@ -27,6 +27,9 @@
 ; TODO: executethe program with n = 1 and print its result
 ; Answer:
 ; this sets variable n to 1
-(setf n 0)
+(setf prg '(+ 1 n))
+(setf n 1)
+(print (eval prg))
+
 (setf prg (+ 1 n))
 (print prg)

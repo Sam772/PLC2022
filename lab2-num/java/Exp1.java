@@ -25,6 +25,7 @@ public class Exp1
                     result = Math.round(stdin.nextFloat());
                     haveResult = true;
                     System.out.println("(Rounding to the nearest integer: " + result + ")");
+                    stdin.close();
                 }
                 catch (InputMismatchException e2)
                 {
@@ -53,6 +54,7 @@ public class Exp1
             catch (InputMismatchException e1)
             {
                 System.out.println("Not a valid number.");
+                stdin.close();
             }
         }
         
@@ -62,7 +64,9 @@ public class Exp1
     private static float exp1(float a, float b)
     {
         float result =
-            a + b * (- a + 1/b);
+            //a + b * (- a + 1/b);
+            // correction
+            1 + (a + b) * (a - 1/b);
         return result;
     }
   
