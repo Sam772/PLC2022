@@ -64,3 +64,17 @@
         (3 (reverse (geom-fp n m)))
         (4 (reverse (geom n m))))))
     (write result))
+
+;; Lisp
+;; 2.3b
+;; 7^35 = 3.78818 x 10^29
+;; 7^45 = 1.07007 x 10^38
+;; 7^50 = floating point overflow
+;; 7^55 = floating point overflow
+
+;; Lisp
+;; 2.3c
+;; 7^3 = 343
+;; 7^6 = 117649
+;; 7^9 = 40353607
+;; 7^12 = 13841287201

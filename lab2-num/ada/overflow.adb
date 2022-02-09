@@ -74,3 +74,17 @@ begin
         when others => Put("illegal task");
     end case;
 end Overflow;
+
+-- Ada
+-- 2.3b
+-- 7^35 = 3.78819 x 10^29
+-- 7^45 = 1.07007 x 10^38
+-- 7^50 = inf
+-- 7^55 = inf
+
+-- Ada
+-- 2.3c
+-- 7^3 = 343
+-- 7^6 = 117649
+-- 7^9 = integer overflow range check failed
+-- 7^12 = integer overflow range check failed
