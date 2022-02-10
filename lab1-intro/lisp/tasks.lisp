@@ -25,9 +25,10 @@
 ; (setf prg '(+ 1 n)) define a very simple program
 ; (print prg) print the program
 ; TODO: executethe program with n = 1 and print its result
-; Answer:
 ; this sets variable n to 1
 (setf prg '(+ 1 n))
+
+; Answer:
 (setf n 1)
 (print (eval prg))
 

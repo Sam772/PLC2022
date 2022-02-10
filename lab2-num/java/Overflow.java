@@ -140,8 +140,11 @@ public class Overflow
  * 2.3b
  * 7^35 = 3.78818 x 10^29
  * 7^45 = 1.07007 x 10^38
- * 7^50 = inf
- * 7^55 = inf
+ * 7^50 = infinity
+ * 7^55 = infinity
+ * 
+ * Student number
+ * 200087238^35 = infinity
  */
 
  /**

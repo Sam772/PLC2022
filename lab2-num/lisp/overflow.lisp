@@ -72,6 +72,9 @@
 ;; 7^50 = floating point overflow
 ;; 7^55 = floating point overflow
 
+;; Student number
+;; 200087238^35 = floating point overflow
+
 ;; Lisp
 ;; 2.3c
 ;; 7^3 = 343
