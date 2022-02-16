@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.EnumSet;
 
-public class ErrorsEnum
+public class ErrorsEnumSamir
 {
 
     enum Error { FP_ROUNDING, FP_OVERFLOW, FP_UNDERFLOW, INT_OVERFLOW }
