@@ -34,12 +34,12 @@ public class ErrorsBool
   
 
     private static Result pl2PLType(Error e)
-    {
+    {// true ? 
         Result type = 
             (e == Error.FP_OVERFLOW ? Result.INFINITY :
                 (e == Error.FP_UNDERFLOW ? Result.ZERO :
                     (e == Error.FP_ROUNDING ? Result.A_BIT_DIFFERENT : 
-                        true ? Result.VERY_DIFFERENT
+                        Result.VERY_DIFFERENT
                     )
                 )
             );
