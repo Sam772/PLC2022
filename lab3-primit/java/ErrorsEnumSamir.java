@@ -80,7 +80,7 @@ public class ErrorsEnumSamir
 
     public static void main(String[] args)
     {
-        System.out.print("Known errors = ");
+        System.out.print("Known results = ");
         // for (Error e : EnumSet.allOf(Error.class)) 
         for (Result r : EnumSet.allOf(Result.class)) 
         {
