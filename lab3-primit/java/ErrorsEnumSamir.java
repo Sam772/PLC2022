@@ -81,21 +81,13 @@ public class ErrorsEnumSamir
     public static void main(String[] args)
     {
         System.out.print("Known results = ");
-        // for (Error e : EnumSet.allOf(Error.class)) 
         for (Result r : EnumSet.allOf(Result.class)) 
         {
             System.out.print(r + " ");
         }
         System.out.println();
         
-        // Error e = getEnumElement("error", Error.class);
         Result r = getEnumElement("result", Result.class);
-        // System.out.println(e + " results in: " + error2Result(e));
         System.out.println(r + " results in: " + result2Error(r));
     }
 }
-
-/** 
- * 3.2b
- * swapping the enum errors and results
-*/

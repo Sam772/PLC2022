@@ -36,7 +36,7 @@
     (let*
         ((line (read-line)) ;get a line as a string
          (element (read-from-string line))) ;parse the line
-        (if (resultp element) ;is element a valid error?
+        (if (resultp element) ;is element a valid result?
             ; then:
             element ;yes, return it
             ; else:
