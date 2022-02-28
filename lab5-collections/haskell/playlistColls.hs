@@ -54,7 +54,7 @@ playlist2 = [piece2, advert1]
 
 playlists = [playlist1, playlist2] -- a list of lists
 
-adsFromPlaylists = "todo" -- TASK 5.5(a)
+adsFromPlaylists = [  ] -- TASK 5.5(a)
 
 shortItemLenghts1 = "todo" -- TASK 5.4(b)
 
