@@ -18,6 +18,9 @@ class Board:
             assert len(row) == 3
             for cell in row:
                 assert cell in ["X","O","B"]
+# 5.5a
+# Type checking in python is dynamic vs type checking is not done at runtime
+# python method is in board class but for haskell it is its own function
 
     def changeCell(self, cellValue, row, col):
         self.rows[row][col] = cellValue
