@@ -105,7 +105,7 @@ public class PlaylistColls {
         // TASK 5.2(b)...
         // only adds items with a length less than 20 seconds
         for (Item item : playlist1) {
-            if (item.length_secs < 20f) {
+            if (item.length_secs < 20.0f) {
                 shortItemLengths1.add(item.length_secs);
             }
         }
