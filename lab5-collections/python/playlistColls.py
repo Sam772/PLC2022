@@ -58,7 +58,7 @@ things = [111, piece1, "hello", advert1, [piece2]]
 
 print("things = %s" % things)
 
-piecesFromThings = [ item for item in things ] #TASK 5.3.(c) -- replace "todo" by a list comprehension
+piecesFromThings = [ item for item in things if isinstance(item, (Piece, list)) ] #TASK 5.3.(c) -- replace "todo" by a list comprehension
 
 print("piecesFromThings = %s" % piecesFromThings)
 
