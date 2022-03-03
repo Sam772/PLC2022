@@ -78,8 +78,9 @@ class PlaylistTree {
         public int countItems() {
             int result = 0;
             // TASK 6.2.(b)
-
-
+            for (Item item : ((PlayList)this).items) {
+                result += item.countItems();
+            }
             return result;
         }
 
@@ -93,6 +94,10 @@ class PlaylistTree {
                 items.add(0, item); // add the item to the beginning of the list
             }
         }
+        /** 6.2c
+         * ???
+         * 
+         * */ 
     }
 
     public static void main(String[] args) {
