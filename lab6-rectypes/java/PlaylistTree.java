@@ -95,8 +95,15 @@ class PlaylistTree {
             }
         }
         /** 6.2c
-         * ???
+         * Both playlist1 and playlist2 refer to the same object,
+         * as in the same playlist. So, any change in playlist1
+         * will reflect that change in playlist2, hence when an
+         * advert is added at the start of the first sub playlist,
+         * it is also added to the object playlist2 refers to.
+         * playlist2 = [ playlist1, ad, playlist1 ]
          * 
+         * Looks for item, if it is a playlist, it will call the
+         * method inside playlist and add the new member.
          * */ 
     }
 
