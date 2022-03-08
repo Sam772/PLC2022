@@ -96,14 +96,20 @@ class PlaylistTree {
         }
         /** 6.2c
          * Both playlist1 and playlist2 refer to the same object,
-         * as in the same playlist. So, any change in playlist1
-         * will reflect that change in playlist2, hence when an
-         * advert is added at the start of the first sub playlist,
-         * it is also added to the object playlist2 refers to.
-         * playlist2 = [ playlist1, ad, playlist1 ]
+         * as in the same playlist. So, any change in playlist1 will
+         * reflect that change in playlist2, hence when an advert
+         * is added at the start of the first sub playlist, it is
+         * also added to the object playlist2 refers to.
          * 
-         * Looks for item, if it is a playlist, it will call the
-         * method inside playlist and add the new member.
+         * On line 124 and 125:
+         * List<Item> items2 = new ArrayList<>(Arrays.asList(new Item[] { playList1, advert1, playList1 }));
+         * PlayList playList2 = new PlayList(items2);
+         * 
+         * Here we can see that playlist2 items are being created exactly from the same list as in playlist1.
+         * 
+         * How the method works is, it will look for an item, if it is a 
+         * playlist, it will call the method inside playlist and add the 
+         * new member to the list.
          * */ 
     }
 
