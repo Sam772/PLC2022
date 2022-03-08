@@ -56,7 +56,7 @@ Item *newPiece(char *name, char *performer, float length)
 {
     // TASK 6.3(a)
     Item *result = malloc(sizeof(Item));
-    (*result).variant = PIECE;
+    (*result).variant = PIECE; // initialise discriminant
     (*result).content.piece.name = name;
     (*result).content.piece.performer = performer;
     (*result).content.piece.length = length;
