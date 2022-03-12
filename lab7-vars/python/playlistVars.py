@@ -55,6 +55,8 @@ def definePlaylist1():
     piece1 = Piece("Moonlight", "C. Arrau", 17*60+26.0)
     piece2 = Piece("Pathetique", "D. Barenboim", 16*60+49.0)
     advert1 = Advert(Product("chocolate", "Yummm"), 15.0)
+    # Task 7.3b
+    global playlist1
     playlist1 = [piece1, advert1, piece2]
 
 definePlaylist1()

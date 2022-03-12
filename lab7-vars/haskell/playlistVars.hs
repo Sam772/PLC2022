@@ -47,6 +47,10 @@ playlist1 = [piece1, advert1, piece2]
     advert1 = Advert (Product "chocolate" "Yummm")          (15*seconds)
     minutes = 60*seconds -- TASK: identify the scope of variable "minutes"
     seconds = 1
+    -- Task 7.4a
+    -- the scope of variable minutes is non-linear statically scoped
+    -- this means that any variables can be accessed within a scope,
+    -- even before they are initialised
 
 length1 = sum [ item_length_secs item | item <- playlist1 ]
     -- OPTIONAL TASK: identify the scope of variable "item" above

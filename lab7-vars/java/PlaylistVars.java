@@ -74,6 +74,18 @@ public class PlaylistVars {
         for (final Item item : playlist1) { // TASK: related to the lifetimes of the variable "item"
             length1 = length1 + item.length_secs;
         }
+        /**
+         * 7.2a
+         * the scope of variable length1 is linear statically
+         * scoped within the main method because it has been 
+         * declared in the main method so it can only be accessed 
+         * within the main method.
+         * 
+         * 7.2b
+         * length1 lifetimes: 1
+         * item lifetimes: 1
+         * total lifetimes: 2
+        */
 
         System.out.printf("length1 = %.2f", length1);
 
