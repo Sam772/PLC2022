@@ -16,9 +16,9 @@ procedure PlayListVars is
         Put(" by ");
         Put (To_String (p.brand));
     end Put_Product;
-
-    type Piece_Length_Type is new Float range 0.0..36000.0;
-    type Advert_Length_Type is new Float range 0.0..120.0;
+    -- change type to subtype and remove new
+    subtype Piece_Length_Type is Float range 0.0..36000.0;
+    subtype Advert_Length_Type is Float range 0.0..120.0;
 
     type Item_Variant_Type is (PIECE, ADVERT);
 

@@ -82,9 +82,9 @@ public class PlaylistVars {
          * within the main method.
          * 
          * 7.2b
-         * length1 lifetimes: 1
-         * item lifetimes: 1
-         * total lifetimes: 2
+         * length1 lifetimes: 3
+         * item lifetimes: 3
+         * total lifetimes: 6
         */
 
         System.out.printf("length1 = %.2f", length1);
