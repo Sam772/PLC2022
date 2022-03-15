@@ -48,9 +48,17 @@ playlist1 = [piece1, advert1, piece2]
     minutes = 60*seconds -- TASK: identify the scope of variable "minutes"
     seconds = 1
     -- Task 7.4a
-    -- the scope of variable minutes is non-linear statically scoped
-    -- this means that any variables can be accessed within a scope,
-    -- even before they are initialised
+    -- The scope of variable minutes starts from line 43 after the "="
+    -- character starting with "[piece1, advert1, piece2]" on line 43.
+    -- The scope of variable minutes ends on line 49 after the "1"
+    -- character from the seconds variable.
+
+    -- ask if we need to mention if it is non-linear static scoped?
+    -- The scope is non-linear statically scoped which means variables
+    -- can be accessed within a scope before they are initialised. The
+    -- minutes variable has a scope within the entire of the indented
+    -- block of code in playlist1.
+
 
 length1 = sum [ item_length_secs item | item <- playlist1 ]
     -- OPTIONAL TASK: identify the scope of variable "item" above

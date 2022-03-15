@@ -76,10 +76,14 @@ public class PlaylistVars {
         }
         /**
          * 7.2a
-         * the scope of variable length1 is linear statically
-         * scoped within the main method because it has been 
-         * declared in the main method so it can only be accessed 
-         * within the main method.
+         * The scope of variable length1 on line 73 starts after
+         * the "=" character, so the scope starts from "0f;" on 
+         * line 73. The scope of variable length1 on line 73 ends
+         * from the closing curly bracket of the main method on
+         * line 81 right before the "}" character.
+         * 
+         * ask if we need to mention if it is linear static scoped
+         * within the main method?
          * 
          * 7.2b
          * length1 lifetimes: 1
