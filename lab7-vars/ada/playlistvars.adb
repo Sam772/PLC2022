@@ -93,6 +93,7 @@ begin
         item := playlist1(i);
         case item.all.item_variant is
         when PIECE =>
+        -- Float() line 97/99
             length1 := length1 + item.all.piece_length_secs; -- TASK: fix compiler error
         when ADVERT =>
             length1 := length1 + item.all.ad_length_secs; -- TASK: fix compiler error
