@@ -51,9 +51,12 @@ playlist1 = [piece1, advert1, piece2]
     -- The scope of variable minutes starts from line 43 after the "="
     -- character starting with "[piece1, advert1, piece2]" on line 43.
     -- The scope of variable minutes ends on line 49 after the "1"
-    -- character from the seconds variable.
+    -- character from the seconds variable.  After the "1" the 
+    -- scope is terminated due to no indentation onwards.
+
 
     -- ask if we need to mention if it is non-linear static scoped?
+        
     -- The scope is non-linear statically scoped which means variables
     -- can be accessed within a scope before they are initialised. The
     -- minutes variable has a scope within the entire of the indented

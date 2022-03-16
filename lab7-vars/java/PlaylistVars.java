@@ -84,6 +84,9 @@ public class PlaylistVars {
          * 
          * ask if we need to mention if it is linear static scoped
          * within the main method?
+         * length1 is linear static scoped which means it can only
+         * be used after in the block starting from its declaration
+         * up until the end of the block.
          * 
          * 7.2b
          * length1 lifetimes: 1
