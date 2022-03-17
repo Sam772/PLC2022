@@ -182,8 +182,8 @@ public class PlaylistSubprg {
 
     }
 
-    public static void main(String[] args)
-        throws PlaylistProgress.EndOfPlaylist {
+    public static void main(String[] args) {
+        //throws PlaylistProgress.EndOfPlaylist {
         // TASK: remove the above throws declaration and handle the exception properly
 
         Piece piece1 = new Piece("Moonlight", "C. Arrau", 17 * 60 + 26f);
@@ -230,10 +230,18 @@ public class PlaylistSubprg {
         System.out.println();
 
         PlaylistProgress progress = new PlaylistProgress(playlist1);
-        while (true) {
-            float remainingLength = progress.getRemainingLength();
-            System.out.printf("Next item = %s \n", progress.getNextItem());
-            System.out.printf("  remaining play time = %.2f \n", remainingLength);
+        try {
+            while (true) {
+                float remainingLength = progress.getRemainingLength();
+                if (progress.getNextItem() == null) {
+                    break;
+                } else {
+                    System.out.printf("Next item = %s \n", progress.getNextItem());
+                    System.out.printf("  remaining play time = %.2f \n", remainingLength);
+                }
+            }
+        } catch (PlaylistProgress.EndOfPlaylist e) {
+            e.printStackTrace();
         }
     }
 }
