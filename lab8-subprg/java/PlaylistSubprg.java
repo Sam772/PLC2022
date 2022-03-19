@@ -230,18 +230,17 @@ public class PlaylistSubprg {
         System.out.println();
 
         PlaylistProgress progress = new PlaylistProgress(playlist1);
-        try {
-            while (true) {
+        while (true) {
+            try {
                 float remainingLength = progress.getRemainingLength();
-                if (progress.getNextItem() == null) {
-                    break;
-                } else {
-                    System.out.printf("Next item = %s \n", progress.getNextItem());
-                    System.out.printf("  remaining play time = %.2f \n", remainingLength);
-                }
+                System.out.printf("Next item = %s \n", progress.getNextItem());
+                System.out.printf("  remaining play time = %.2f \n", remainingLength);
             }
-        } catch (PlaylistProgress.EndOfPlaylist e) {
-            e.printStackTrace();
+            catch (PlaylistProgress.EndOfPlaylist e) {
+                e.printStackTrace();
+                System.out.println("No more items");
+                break;
+            }
         }
     }
 }
