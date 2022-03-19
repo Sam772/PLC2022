@@ -170,20 +170,25 @@ public class PlaylistSubprg {
     public static void getPlaylistLength_CopyInCopyOutPassing(List<Item> playlist, FloatHolder result,
             FloatHolder resultNoAds) {
         // TASK: complete this method, simulating copy-in/copy-out parameter passing
+        // Task 8.3b
+        // copy in
+        FloatHolder result2 = new FloatHolder(result.x);
+        FloatHolder resultNoAds2 = new FloatHolder(resultNoAds.x);
 
+        for (Item item : playlist) {
+            result2.x = result2.x + item.length_secs;
+            if (!(item instanceof Advert)) {
+                resultNoAds2.x = resultNoAds2.x + item.length_secs;
+            }
+        }
 
-
-
-
-
-
-
-
-
+        // copy out
+        result.x = result2.x;
+        resultNoAds.x = resultNoAds2.x;
     }
 
     public static void main(String[] args) {
-        //throws PlaylistProgress.EndOfPlaylist {
+        // throws PlaylistProgress.EndOfPlaylist {
         // TASK: remove the above throws declaration and handle the exception properly
 
         Piece piece1 = new Piece("Moonlight", "C. Arrau", 17 * 60 + 26f);
@@ -228,7 +233,7 @@ public class PlaylistSubprg {
         System.out.printf("length1A_Copy = %.2f\n", length1A_Copy.x);
 
         System.out.println();
-
+        // Task 8.2c
         PlaylistProgress progress = new PlaylistProgress(playlist1);
         while (true) {
             try {
