@@ -111,7 +111,9 @@ public class PlaylistSubprg {
      */
     public static float getPlaylistLengthTwoItems(List<Item> playlist) throws PlaylistProgress.EndOfPlaylist {
         PlaylistProgress progress = new PlaylistProgress(playlist);
-        // TASK: Is the expression below referentially transparent?
+        /** TASK 8.4a: Is the expression below referentially transparent?
+         * 
+        */
         return twice(progress.getNextItem().length_secs);
     }
 
@@ -169,8 +171,7 @@ public class PlaylistSubprg {
      */
     public static void getPlaylistLength_CopyInCopyOutPassing(List<Item> playlist, FloatHolder result,
             FloatHolder resultNoAds) {
-        // TASK: complete this method, simulating copy-in/copy-out parameter passing
-        // Task 8.3b
+        // TASK 8.3b: complete this method, simulating copy-in/copy-out parameter passing
         // copy in
         FloatHolder result2 = new FloatHolder(result.x);
         FloatHolder resultNoAds2 = new FloatHolder(resultNoAds.x);
