@@ -113,6 +113,13 @@ public class PlaylistSubprg {
         PlaylistProgress progress = new PlaylistProgress(playlist);
         /** TASK 8.4a: Is the expression below referentially transparent?
          * 
+         * The expression is not referentially transparent because
+         * it can't be replaced by an equivalent expression, if it
+         * is attempted to, it will change the meaning of the
+         * program.
+         * 
+         * length_secs is final?
+         * can't have two different playlists?
         */
         return twice(progress.getNextItem().length_secs);
     }
@@ -172,7 +179,7 @@ public class PlaylistSubprg {
     public static void getPlaylistLength_CopyInCopyOutPassing(List<Item> playlist, FloatHolder result,
             FloatHolder resultNoAds) {
         // TASK 8.3b: complete this method, simulating copy-in/copy-out parameter passing
-        // copy in
+        // copy in, assigning local variable with actual parameter
         FloatHolder result2 = new FloatHolder(result.x);
         FloatHolder resultNoAds2 = new FloatHolder(resultNoAds.x);
 
@@ -183,7 +190,7 @@ public class PlaylistSubprg {
             }
         }
 
-        // copy out
+        // copy out, actual parameter assigned the final value of formal parameter
         result.x = result2.x;
         resultNoAds.x = resultNoAds2.x;
     }
