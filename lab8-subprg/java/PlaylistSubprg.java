@@ -113,13 +113,13 @@ public class PlaylistSubprg {
         PlaylistProgress progress = new PlaylistProgress(playlist);
         /** TASK 8.4a: Is the expression below referentially transparent?
          * 
-         * The expression is not referentially transparent because
-         * it can't be replaced by an equivalent expression, if it
-         * is attempted to, it will change the meaning of the
-         * program.
+         * The expression on line 115 is not referentially transparent because referential transparency means if we were to replace an existing expression with another expression, 
+         * it would not change the meaning of the program. However, if we were change "twice(progress.getNextItem().length_secs)" to "progress.getNextItem().length_secs + 
+         * progress.getNextItem().length_secs" this would change the meaning of the program because in the original expression we are getting the length of the same item twice but 
+         * by changing the expression to "progress.getNextItem().length_secs + progress.getNextItem().length_secs", we are instead getting the next item twice which is two different 
+         * items instead of the same item twice, this means the original expression on line 115 is not referentially transparent. The method getNextItem() is iterative so everytime 
+         * the method is called it will yield a new item.
          * 
-         * length_secs is final?
-         * can't have two different playlists?
         */
         return twice(progress.getNextItem().length_secs);
     }
