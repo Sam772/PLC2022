@@ -27,8 +27,7 @@ public class PlaylistMixer {
 
         public synchronized void add(Item item) { 
             // TASK: complete
-
-
+            items.add(item);
         }
 
         public synchronized void shuffle(int i) {
